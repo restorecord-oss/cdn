@@ -29,7 +29,6 @@ $(function () {
       rules: {
         'username': {
           required: true,
-          email: true,
           minlength: 2,
           maxlength: 30
         },
