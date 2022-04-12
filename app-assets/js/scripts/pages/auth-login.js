@@ -27,12 +27,16 @@ $(function () {
         $(element).valid();
       }, */
       rules: {
-        'login-email': {
+        'username': {
           required: true,
-          email: true
+          email: true,
+          minlength: 2,
+          maxlength: 30
         },
-        'login-password': {
-          required: true
+        'password': {
+          required: true,
+          minlength: 8,
+          maxlength: 50
         }
       }
     });
