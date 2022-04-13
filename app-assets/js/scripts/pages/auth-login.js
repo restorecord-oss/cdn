@@ -36,6 +36,11 @@ $(function () {
           required: true,
           minlength: 8,
           maxlength: 50
+        },
+        'twofactor': {
+          minlength: 6,
+          maxlength: 6,
+          digits: true,
         }
       }
     });
