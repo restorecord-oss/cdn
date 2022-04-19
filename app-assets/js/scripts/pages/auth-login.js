@@ -29,7 +29,7 @@ $(function () {
       rules: {
         'username': {
           required: true,
-          minlength: 2,
+          minlength: 1,
           maxlength: 30
         },
         'password': {
