@@ -39,15 +39,21 @@ $(function () {
         $(element).valid();
       }, */
       rules: {
-        'register-username': {
-          required: true
-        },
-        'register-email': {
+        'username': {
           required: true,
-          email: true
+          minlength: 1,
+          maxlength: 32
         },
-        'register-password': {
-          required: true
+        'email': {
+          required: true,
+          email: true,
+          minlength: 6,
+          maxlength: 50
+        },
+        'password': {
+          required: true,
+          minlength: 6,
+          maxlength: 50,
         }
       }
     });
