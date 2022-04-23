@@ -43,7 +43,7 @@ $(function () {
           required: true,
           minlength: 1,
           maxlength: 32,
-          pattern: '/[^a-zA-Z0-9]/g'
+          accept: "/[a-zA-Z0-9\s]*/"
         },
         'email': {
           required: true,
