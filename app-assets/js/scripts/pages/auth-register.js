@@ -42,8 +42,7 @@ $(function () {
         'username': {
           required: true,
           minlength: 1,
-          maxlength: 32,
-          accept: "/[a-zA-Z0-9\s]*/"
+          maxlength: 32
         },
         'email': {
           required: true,
